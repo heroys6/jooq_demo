@@ -7,3 +7,6 @@
 
 # Maven build files #
 target/
+
+# Credentials
+jooq-config.xml
