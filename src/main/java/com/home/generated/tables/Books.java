@@ -29,7 +29,7 @@ import java.util.List;
 @SuppressWarnings({ "all", "unchecked", "rawtypes" })
 public class Books extends TableImpl<BooksRecord> {
 
-	private static final long serialVersionUID = 315260621;
+	private static final long serialVersionUID = 1720051019;
 
 	/**
 	 * The reference instance of <code>jooq_demo.books</code>
@@ -63,6 +63,11 @@ public class Books extends TableImpl<BooksRecord> {
 	 * The column <code>jooq_demo.books.publishing_date</code>.
 	 */
 	public final TableField<BooksRecord, Timestamp> PUBLISHING_DATE = createField("publishing_date", org.jooq.impl.SQLDataType.TIMESTAMP, this, "");
+
+	/**
+	 * The column <code>jooq_demo.books.pages_num</code>.
+	 */
+	public final TableField<BooksRecord, Integer> PAGES_NUM = createField("pages_num", org.jooq.impl.SQLDataType.INTEGER, this, "");
 
 	/**
 	 * Create a <code>jooq_demo.books</code> table reference
